@@ -8,9 +8,13 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
+import styled from 'styled-components/native';
 import { WebBrowser } from 'expo';
 
 import { MonoText } from '../components/StyledText';
+
+const StyledView = styled.View`background-color:papayawhip;`
+const StyledText = styled.Text`color: red;`
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -32,18 +36,10 @@ export default class HomeScreen extends React.Component {
             />
           </View>
 
-          <View style={styles.getStartedContainer}>
-            {this._maybeRenderDevelopmentModeWarning()}
-
-            <Text style={styles.getStartedText}>Get started by opening</Text>
-
-            <View style={[styles.codeHighlightContainer, styles.homeScreenFilename]}>
-              <MonoText style={styles.codeHighlightText}>screens/HomeScreen.js</MonoText>
-            </View>
-
-            <Text style={styles.getStartedText}>
-              Change this text and your app will automatically reload.
-            </Text>
+          <View>
+            <StyledView>
+                <StyledText>ok</StyledText>
+            </StyledView>
           </View>
 
           <View style={styles.helpContainer}>
