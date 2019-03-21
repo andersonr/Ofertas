@@ -34,6 +34,7 @@ export default class HomeScreen extends React.Component {
               }
               style={styles.welcomeImage}
             />
+            <Text>Cooper - A nossa cooperativa</Text>
           </View>
 
           <View>
